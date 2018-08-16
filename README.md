@@ -43,8 +43,13 @@ The headlessRPC default port is 633
   Currently supported x86 development boards are:
   
   1. Wildfire
+  
   2. LattePand
+  
   3. UP Squared
+  
   4. intel Edison Breakout Board
+  
   5. Dev-14281 SparkFun
-  n.
+  
+  n. ...
