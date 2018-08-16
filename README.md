@@ -1,4 +1,4 @@
-# TrustNote Development Documentation (Chinese)
+# TrustNote Development Documentation (english)
 
 ## Introduction
 
