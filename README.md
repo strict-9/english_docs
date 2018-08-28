@@ -1,55 +1,60 @@
-# TrustNote Development Documentation
+<p align="center">
+  <img src="../../../images/blob/master/TrustNote-Logo-Blue.png" width ="200">
+</p>
 
-## Introduction
+TrustNote is a Directed Acyclic Graph (DAG) based distributed ledger system and its development platform for the tokenized economy.
 
-> TrustNote is a DAG public chain with fast transaction rates and low transaction costs.
+<p align="center">
+  <img src="../../../images/blob/master/DAG.PNG">
+</p>
 
-![](developers.png)
+*An illustration of DAG after its main chain is determined. Check out the TrustNote whitepaper at https://github.com/trustnote/document for more information.*
 
-## Development
+# Development Tools and Samples
 
-### Source-level development tools headlessRPC
+This document links to the repositories that are meant to provide development tools for you to use, and examples for you to better understand the features of the TrustNote network. The samples are meant to be used with the latest version of the development tools. 
 
-headlessRPC is a light node that provides an interfaceless wallet for RPC services. The wallet has all the features of the wallet and can be called remotely, but remote calls are not recommended. It is recommended that the developer call it locally. If it is set up on the server, the RPC port is recommended not to be open to the public.
+Please feel free to copy and modify the source code herein for your own projects, and please consider sharing your modifications with us, especially if they might benefit other developers using any of the TrustNote technology. See the License for more information.
 
-The headlessRPC default port is 633
+## headlessRPC: Source-level Development Tool
 
-### sdk
+headlessRPC is not just a light node but also a header-less wallet that provides the RPC services. The wallet has all features of a typical TTT wallet and it supports Remote Procedure Call (RPC). However, due to performance considerations, we do recommend applications to call it locally between processes on the same computer. 
 
-* python
+The default port of headlessRPC is 633. Due to security considerations, if headlessRPC is set up on a server, the RPC port shouldn’t be accessible to the public.
 
-  Used for servers, PCs, and IoT devices.
-  
-  Examples of development using pythonSDK are:
-  
-  Voting system: https://github.com/TrustNoteSamples/VotingSystem
-  
-  Web local wallet: https://github.com/TrustNoteSamples/web_wallet
-  
-  Flowerpot soil condition chain: https://github.com/TrustNoteSamples/temp-humi
-  
-* js
+## Python SDK
 
-  Applicable to the universal wallet, the developer only needs to build the H5 page, complete the reprint through the jssdk call wallet, and process the business logic after the payment is successful through the callback function. Can be widely used to develop a variety of paid applications.
-  
-  Jssdk example: paid reading
-  
-  https://github.com/TrustNoteSamples/paid_reading
-  
-* rust
+TrustNote Python SDK is suitable for tokenized applications running on servers, PCs, and IoT devices.
 
-  PC and development board for x86 architecture (IoT motherboard with x86 architecture).
-  
-  Currently supported x86 development boards are:
+### Samples:
+
+**Voting System** - https://github.com/TrustNoteSamples/VotingSystem
+**Web Wallet** - https://github.com/TrustNoteSamples/web_wallet
+**Soil condition of Flower Pot** - https://github.com/TrustNoteSamples/temp-humi
   
-  1. Wildfire
-  
-  2. LattePand
-  
-  3. UP Squared
-  
-  4. intel Edison Breakout Board
-  
-  5. Dev-14281 SparkFun
-  
-  n. ...
+## JavaScript SDK
+
+TrustNote JavaScript SDK is a tool specifically designed for web developers to implement tokenized applications. If you know how to use jQuery, then you should be able to use the SDK to develop web applications running on TrustNote. 
+
+### Samples:
+
+**Pay for Read** - https://github.com/TrustNoteSamples/paid_reading
+
+## Rust SDK
+
+Rust is a language for people who value speed and stability. To provide better experiences and more application scenarios, TrustNote Rust SDK currently runs on PC and many X86 based development boards, including:
+
+- Wildfire
+- LattePand
+- UP Squared
+- intel Edison Breakout Board
+- Dev-14281 SparkFun
+
+# Questions? Need Help? Found a bug?
+
+If you've got questions about setup, deploying, special feature implementation in your fork, or just want to chat with the developer, please feel free to start a thread in our Reddit community!
+Found a bug with TrustNote? Go ahead and submit an issue. And, of course, feel free to submit pull requests with bug fixes or changes to the dev branch.
+
+# Credits
+
+TrustNote is largely based on Byteball’s source code but also inspired by many other open source projects such as Bitcoin, DASH, IOTA, and Hyperledger Fabric. We are proud to be a donor of Byteball and we hope we can support more innovative open source blockchain projects in the future.
