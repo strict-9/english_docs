@@ -20,7 +20,7 @@ Please feel free to copy and modify the source code herein for your own projects
 
 [TrustNote headlessRPC](https://github.com/trustnotedevelopers/rpc) is not just a light node but also a header-less wallet that provides the RPC services. The wallet has all features of a typical TTT wallet and it supports Remote Procedure Call (RPC). However, due to performance considerations, we do recommend applications to call it locally between processes on the same computer. 
 
-The default port of headlessRPC is 633. Due to security considerations, if headlessRPC is set up on a server, the RPC port shouldn’t be accessible to the public.
+The default port of headlessRPC is 6332. Due to security considerations, if headlessRPC is set up on a server, the RPC port shouldn’t be accessible to the public.
 
 ## Python SDK
 
