@@ -17,7 +17,7 @@ TTT wallet is Fast, Light, Sweet crypto wallet, We recommend below document to u
 
 Integrating the SDK into your project manually
 
-* [Download the latest SDK](https://github.com/TrustNoteDevelopers/iOS_sdk/raw/master/ttt_wallet_sdk_v0.1.zip)
+* [Download the latest SDK](https://github.com/TrustNoteDevelopers/sdk_iOS/raw/master/ttt_wallet_sdk_v0.1.zip)
 * Extract the ttt_wallet_sdk_v**.zip package from the zip file
 * Copy the `WalletSDK.framework` and `WalletSDK.bundle` to module's libs folder
 * `import WalletSDK` module in your project.
