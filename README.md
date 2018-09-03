@@ -24,7 +24,7 @@ The default port of headlessRPC is 6332. Due to security considerations, if head
 
 ## Python SDK
 
-[TrustNote Python SDK](https://github.com/trustnotedevelopers/pythonsdk) is suitable for tokenized applications running on servers, PCs, and IoT devices.
+[TrustNote Python SDK](https://github.com/TrustNoteDevelopers/sdk_python) is suitable for tokenized applications running on servers, PCs, and IoT devices.
 
 #### Samples:
 
