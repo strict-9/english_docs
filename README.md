@@ -28,11 +28,11 @@ The default port of headlessRPC is 6332. Due to security considerations, if head
 
 #### Samples:
 
-**Voting System** - https://github.com/TrustNoteSamples/VotingSystem
+**A Simple Voting System** - https://github.com/TrustNoteSamples/VotingSystem
 
-**Web Wallet** - https://github.com/TrustNoteSamples/web_wallet
+**A Simple Web Wallet** - https://github.com/TrustNoteSamples/web_wallet
 
-**Soil condition of Flower Pot** - https://github.com/TrustNoteSamples/temp-humi
+**Saving Soil Moisture & Air Temperature** - https://github.com/TrustNoteSamples/temp-humi
   
 ## JavaScript SDK
 
