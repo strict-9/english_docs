@@ -1,5 +1,10 @@
 # TrustNote Rust SDK
 
+## install Rust language
+
+```
+curl https://sh.rustup.rs -sSf | sh
+```
 
 ## Getting Started
 
