@@ -25,8 +25,40 @@ wget https://github.com/dhruvvyas90/qemu-rpi-kernel/raw/master/kernel-qemu-4.4.3
 
 5. install qemu
 
+* Arch: 
 ```
-apt install qemu
+pacman -S qemu
+```
+
+* Debian/Ubuntu: 
+
+```
+apt-get install qemu
+```
+
+* Fedora: 
+```
+dnf install @virtualization
+```
+
+* Gentoo: 
+```
+emerge --ask app-emulation/qemu
+```
+
+* RHEL/CentOS: 
+```
+yum install qemu-kvm
+```
+* SUSE: 
+```
+zypper install qemu
+```
+
+* macOS
+
+```
+brew install qemu
 ```
 
 6. start raspbian on your linux
