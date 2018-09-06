@@ -22,6 +22,10 @@ Please feel free to copy and modify the source code herein for your own projects
 
 The default port of headlessRPC is 6332. Due to security considerations, if headlessRPC is set up on a server, the RPC port shouldn’t be made accessible to the public.
 
+#### Samples:
+
+**Charging while Mining App Demo** - https://github.com/TrustNoteSamples/charging
+
 ## Python SDK
 
 [TrustNote Python SDK](https://github.com/TrustNoteDevelopers/sdk_python) is suitable for tokenized applications running on servers, PCs, and IoT devices.
@@ -33,6 +37,8 @@ The default port of headlessRPC is 6332. Due to security considerations, if head
 **A Simple Web Wallet** - https://github.com/TrustNoteSamples/web_wallet
 
 **Saving Soil Moisture & Air Temperature** - https://github.com/TrustNoteSamples/temp-humi
+
+**Web-based Aircraft Shooting Game** - https://github.com/TrustNoteSamples/AirWar
   
 ## JavaScript SDK
 
@@ -51,6 +57,12 @@ Rust is a language for people who value speed and stability. To provide better e
 - UP Squared
 - intel Edison Breakout Board
 - Dev-14281 SparkFun
+
+#### Samples:
+
+**Multi Web Wallet** - https://github.com/TrustNoteSamples/multi_webwallet
+
+**Building TrustNote Rust SDK From Source for Raspberry Pi** - https://github.com/trustnote/rust-trustnote/blob/master/RaspberryPi.md
 
 # Questions? Need Help? Found a bug?
 
