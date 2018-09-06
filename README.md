@@ -62,7 +62,7 @@ Rust is a language for people who value speed and stability. To provide better e
 
 **Multi Web Wallet** - https://github.com/TrustNoteSamples/multi_webwallet
 
-**Building TrustNote Rust SDK From Source for Raspberry Pi** - https://github.com/trustnote/rust-trustnote/blob/master/RaspberryPi.md
+**Building Rust SDK for Raspberry Pi** - https://github.com/trustnote/rust-trustnote/blob/master/RaspberryPi.md
 
 # Questions? Need Help? Found a bug?
 
