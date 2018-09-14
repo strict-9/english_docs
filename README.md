@@ -18,7 +18,7 @@ Please feel free to copy and modify the source code herein for your own projects
 
 ## headlessRPC: Source-level Development Tool
 
-[TrustNote headlessRPC](https://github.com/trustnotedevelopers/rpc) is not just a light node but also a header-less wallet that provides the RPC services. The wallet has all features of a typical TTT wallet and it supports Remote Procedure Call (RPC). However, due to performance considerations, we do recommend applications to call it locally between processes on the same computer. 
+[TrustNote headlessRPC](https://github.com/trustnotedevelopers/rpc) is not just a light node but also a header-less wallet that provides the RPC services. The wallet has all features of a typical TTT wallet and it supports Remote Procedure Call (RPC). TrustNote headlessRPC can be used by shell script or invoked by any scripting languages such as Python. However, due to performance considerations, we do recommend applications to call it locally between processes on the same computer. 
 
 The default port of headlessRPC is 6332. Due to security considerations, if headlessRPC is set up on a server, the RPC port shouldn’t be made accessible to the public.
 
@@ -28,7 +28,7 @@ The default port of headlessRPC is 6332. Due to security considerations, if head
 
 ## Python SDK
 
-[TrustNote Python SDK](https://github.com/TrustNoteDevelopers/sdk_python) is suitable for tokenized applications running on servers, PCs, and IoT devices.
+[TrustNote Python SDK](https://github.com/TrustNoteDevelopers/sdk_python) encapsulated the headlessRPC using Python. It can be imported by your python scripts and it is suitable for tokenized applications running on servers, PCs, and IoT devices. Note TrustNote Python SDK will work when and only when the headlessRPC is running properly.
 
 #### Samples:
 
@@ -50,13 +50,15 @@ The default port of headlessRPC is 6332. Due to security considerations, if head
 
 ## Rust SDK
 
-Rust is a language for people who value speed and stability. To provide better experiences and more application scenarios, [TrustNote Rust SDK](https://github.com/trustnote/rust-trustnote) currently runs on PC and many X86 based development boards, including:
+Rust is a language for people who value speed and stability. To provide better experiences and more application scenarios, [TrustNote Rust SDK](https://github.com/trustnote/rust-trustnote) is provided and it currently runs on PC and many X86 based development boards, including:
 
 - Wildfire
 - LattePand
 - UP Squared
 - intel Edison Breakout Board
 - Dev-14281 SparkFun
+
+TrustNote Rust SDK can be used by shell script or invoked by other scripting languages. Because TrustNote Rust SDK itself is a light node to the TrustNote network, unlike TrustNote Python SDK, the use of the Rust SDK does not require a headlessRPC to run.
 
 #### Samples:
 
