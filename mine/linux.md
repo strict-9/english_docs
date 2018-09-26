@@ -49,7 +49,10 @@ sqlite3 ~/.config/trustnote-pow-supernode/trustnote.sqlite
 得到自己的挖矿收益地址
 ```
 sqlite> select address from my_addresses;
+YIXWRJSKMX3EE2OYEX6IOSU5NB347367
 ```
+
+注意：挖矿时会产生手续费，因此，需要向这个地址打几个TTT（2～10个即可）。
 
 查看节点数据是否同步完成
 ```
