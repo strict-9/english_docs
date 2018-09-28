@@ -9,7 +9,7 @@ This guide assumes that you are using Ubuntu 18.0.4. Before you begin, you shoul
 **Node.js 8**
 You can run node -v to check if you have installed Node.js 8 correctly. If not, you can check nodejs.org for how to install Node.js 8 on Ubuntu based Linux distributions.
 
-**SQLite Version 3((
+**SQLite Version 3**
 You can check this tutorial for how to install SQLite 3 on Ubuntu.
 
 ## Setup Your Super Node
@@ -63,6 +63,10 @@ Email bob(at)trustnote.org with your super node’s wallet address and we will b
 ## Check My Mining Status
 Once the rounds of data synchronized to your super node is the same as the number of current consensus round, you will see messages like below.
 
+<p align="center">
+  <img src="mining1.PNG">
+</p>
+
 Congratulations, you are starting to mine TTT Test Notes now!
 
 ## Check How Many TTT Test Notes I Have Mined
@@ -70,6 +74,9 @@ To check how many TTT Test Notes you have mined, open the TrustNote2 testnet exp
 
 The message below shows the Coinbase rewards your super nodes receive during the mining process.
 
+<p align="center">
+  <img src="mining2.PNG">
+</p>
 
 ## What’s Next?
 Congratulations for your success on mining TTT Test Notes! I hope you enjoy it as much as I do! In the coming weeks, we’ll release more tools and tutorials, any comments and questions are welcomed!
