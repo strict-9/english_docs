@@ -1,86 +1,81 @@
-# TrustNote 挖矿简易教程 （Ubuntu1804LTS Server 版）
+# How to Mine $TTT-test on TrustNote2 Testnet Alpha Release
 
-介绍
+You’ve heard TrustNote, the minable Public DAG ledger, and you’re ready to get your hands dirty on some of the latest crypto-currencies such as $TTT. You can buy and trade $TTT, or you can “mine” for them. Mining $TTT on TrustNote is actually the process of a fair and trustable witness node selection for which the users are rewarded. This tutorial tells you how to mine TTT Test Notes on TrustNote 2.0 Alpha release using the basic tools on a PC running Ubuntu 18.0.4.
 
->该项目在 Ubuntu1804LTS Server 下经过测试可安装运行，其它系统会出现一些无法安装的问题，该bug请社区开发者解决，我们会给出相应激励。
+## Requirements
+**Ubuntu 18.0.4**
+This guide assumes that you are using Ubuntu 18.0.4. Before you begin, you should have a non-root user account with sudo privileges set up on your system.
 
-1. 克隆项目
+**Node.js 8**
+You can run node -v to check if you have installed Node.js 8 correctly. If not, you can check nodejs.org for how to install Node.js 8 on Ubuntu based Linux distributions.
 
+**SQLite Version 3((
+You can check this tutorial for how to install SQLite 3 on Ubuntu.
+
+## Setup Your Super Node
+Clone from the source:
 ```
 git clone https://github.com/trustnote/trustnote-pow-supernode.git
 ```
 
-2. 安装依赖
-
-
-大陆用户，在安装依赖前可设置淘宝源加快安装速度（海外用户可掠过设置淘宝源）：
-
-```
-npm config set registry https://registry.npm.taobao.org
-```
-
+Install the code using npm:
 ```
 cd trustnote-pow-supernode
-sudo npm install
+npm install
 ```
 
-3. 开始挖矿
-
+Start the mining service on your super node and wait for data synchronization to complete:
 ```
 node start.js
 ```
+Press Enter to accept the default actions when you are prompt for input.
 
-之后会有2次需要输入的命令行交互，可以一路回车下去，挖矿的时候会出现这样的界面：
+The first time when the mining service is started, all data will be synchronized to your super node locally. It could take at least 12 hours to complete depending on your internet connection.
 
-![](mine.png)
-
-
-4. 查看挖矿状态与挖矿地址
-
-因为是全节点，所以需要同步一些数据，这需要花费一些时间。
-
-
-连接数据库
+## Check Super Node’s Data Synchronization Status
+Open a new terminal and connecting to the database:
 
 ```
 sqlite3 ~/.config/trustnote-pow-supernode/trustnote.sqlite
 ```
 
-得到自己的挖矿收益地址
-```
-sqlite> select address from my_addresses;
-YIXWRJSKMX3EE2OYEX6IOSU5NB347367
-```
+Check how many rounds of data are synchronized by entering the following SQLite command from time to time:
 
-注意：挖矿时会产生手续费，因此，需要向这个地址打几个TTT（2～10个即可）。
-
-查看节点数据是否同步完成
 ```
 sqlite>select max(round_index) from round;
 ```
 
-![](max.png)
+You can compare this number with the number of current consensus round from the TrustNote2 testnet explorer and figure out how long it may take to synchronizthe rest of the data. It could take at least 12 hours to complete depending on your internet connection.
 
-这时去浏览器 http://explorer2-alpha.trustnote.org:8000/ 查看当前轮次。
+Note: it may take a few minutes before the number of current consensus round showing up on the web page after the testnet explorer is opened.
 
-![](explorer.png)
-
-可以看到框选处，此刻当前轮次是1183。接下来输入sqlite3命令，查询同步到的轮次：
-
-如果得到的轮次和浏览器的相同，则说明已经开始挖矿了。
-
-
-5. 查看挖到多少TTT
-
-登录 http://explorer2-alpha.trustnote.org:8000/  输入自己的挖矿钱包地址，查看余额即可。
-
-
-### 附件：常见错误信息
-
-node-gyp rebuild error
+Whilst waiting, you can check your super node’s wallet address by entering the following SQLite command:
 
 ```
-Install fail! Error: Run "sh -c node-gyp rebuild" error, exit code 1
+sqlite> select address from my_addresses;
 ```
 
-这类错误出现在其他linux系统中，经过测试 Ubuntu1804LTS Server 是没问题的。
+## How to Get TTT Test Notes
+To start with mine TTT Test Notes, you will need to have some TTT Test Notes to pay for your transactions on the TrustNote 2.0 testnet.
+
+Email bob(at)trustnote.org with your super node’s wallet address and we will be glad to send you 10 MN (million notes) TTT Test Notes which is enough for you to start mining.
+
+## Check My Mining Status
+Once the rounds of data synchronized to your super node is the same as the number of current consensus round, you will see messages like below.
+
+Congratulations, you are starting to mine TTT Test Notes now!
+
+## Check How Many TTT Test Notes I Have Mined
+To check how many TTT Test Notes you have mined, open the TrustNote2 testnet explorer, enter your Super Node’s wallet address in the search field and press the search button, you will see the changes of your wallet balance in line with the coinbase rewards you received and the transaction costs you have spent.
+
+The message below shows the Coinbase rewards your super nodes receive during the mining process.
+
+
+## What’s Next?
+Congratulations for your success on mining TTT Test Notes! I hope you enjoy it as much as I do! In the coming weeks, we’ll release more tools and tutorials, any comments and questions are welcomed!
+
+Note this is just the very first release in our renewed TrustNote 2.0 roadmap, it is far from completion or perfection. To make it better, we welcome community members join us to test, develop, and discuss new features as we moving forward.
+
+From time to time, as a community, we will evaluate the contributions made by every contributors. Volunteers that have provided significant contribution will be recognized for their outstanding work, and will be rewarded with $TTT tokens as appreciation (not payment) for the quality of the work submitted. Please reach me on bob(at)trustnote.org if you want to help.
+
+Thanks for reading this. If you have any questions, please feel free to comment below or contacting me by email.
