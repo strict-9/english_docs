@@ -1,10 +1,10 @@
 # How to Mine $TTT-test on TrustNote2 Testnet Alpha Release
 
-You’ve heard [TrustNote](https://trustnote.org/), the minable Public DAG ledger, and you’re ready to get your hands dirty on some of the latest crypto-currencies such as [$TTT](https://coinmarketcap.com/currencies/trustnote/). You can buy and trade $TTT, or you can “mine” for them. Mining $TTT on TrustNote is actually the process of a fair and trustable witness node selection for which the users are rewarded. This tutorial tells you how to mine TTT Test Notes on TrustNote 2.0 Alpha release using the basic tools on a PC running Ubuntu 18.0.4.
+You’ve heard [TrustNote](https://trustnote.org/), the minable Public DAG ledger, and you’re ready to get your hands dirty on some of the latest crypto-currencies such as [$TTT](https://coinmarketcap.com/currencies/trustnote/). You can buy and trade $TTT, or you can “mine” for them. Mining $TTT on TrustNote is actually the process of a fair and trustable witness node selection for which the users are rewarded. This tutorial tells you how to mine TTT Test Notes on TrustNote 2.0 Alpha release using the basic tools on a PC running Ubuntu 18.04.
 
 ## Requirements
 **Ubuntu 18.0.4**
-This guide assumes that you are using Ubuntu 18.0.4. Before you begin, you should have a non-root user account with sudo privileges set up on your system.
+This guide assumes that you are using Ubuntu 18.04. Before you begin, you should have a non-root user account with sudo privileges set up on your system.
 
 **Node.js 8**
 You can run node -v to check if you have installed Node.js 8 correctly. If not, you can check nodejs.org for how to install Node.js 8 on Ubuntu based Linux distributions.
